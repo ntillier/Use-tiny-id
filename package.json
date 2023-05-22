@@ -1,5 +1,5 @@
 {
-  "name": "unique-id",
+  "name": "use-tiny-id",
   "version": "1.0.0",
   "description": "Generate incremental ids easily and quickly",
   "main": "lib/index.js",
