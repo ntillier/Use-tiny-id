@@ -1,6 +1,6 @@
 # SmartId
 
-[View on npmjs](https://www.npmjs.com/package/smartid) - [View on github](https://github.com/ntillier/SmartId)
+[View on npmjs](https://www.npmjs.com/package/use-tiny-id) - [View on github](https://github.com/ntillier/Use-tiny-id)
 
 **Install**
 ```
