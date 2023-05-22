@@ -72,11 +72,16 @@ class UniqueIdGenerator {
   }
 
   next (): string {
+    let str = this.current();
+    this.increment();
+    return str;
+  }
+
+  current (): string {
     let str = '';
     for (let i = this.status.length - 1; i >= 0;) {
       str += this.chars[this.status[i--]];
     }
-    this.increment();
     return str;
   }
 }

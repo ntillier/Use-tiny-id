@@ -11,6 +11,7 @@ const myGenerator = new Generator('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS
 // The count feature test
 console.log('Ids count', myGenerator.count());
 console.log('Ids count after 2 increments', myGenerator.increment().increment().count());
+console.log('Current id', myGenerator.current());
 
 const average = 10;
 

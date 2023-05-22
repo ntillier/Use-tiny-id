@@ -10,5 +10,6 @@ declare class UniqueIdGenerator {
     count(): number;
     increment(): UniqueIdGenerator;
     next(): string;
+    current(): string;
 }
 export = UniqueIdGenerator;
