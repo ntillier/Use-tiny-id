@@ -1,6 +1,6 @@
 {
   "name": "use-tiny-id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate incremental ids easily and quickly",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
