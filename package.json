@@ -1,0 +1,19 @@
+{
+  "name": "unique-id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc && node test.js"
+  },
+  "author": "Nathan TILLIER",
+  "license": "ISC",
+  "devDependencies": {
+    "nanoid": "^3.3.6",
+    "typescript": "^5.0.4"
+  }
+}
