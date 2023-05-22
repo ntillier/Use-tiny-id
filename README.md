@@ -33,7 +33,7 @@ type UniqueIdGeneratorOptions = {
 };
 ```
 
-## Prototype
+## Methods
 
 ### config(config)
 Changes the generator's configuration
