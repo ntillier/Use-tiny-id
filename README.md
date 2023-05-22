@@ -1,15 +1,15 @@
-# SmartId
+# Use Tiny Id
 
 [View on npmjs](https://www.npmjs.com/package/use-tiny-id) - [View on github](https://github.com/ntillier/Use-tiny-id)
 
 **Install**
 ```
-npm install smartid
+npm install use-tiny-id
 ```
 
 **Use**
 ```js
-const Generator = require('smartid');
+const Generator = require('use-tiny-id');
 
 const myGenerator = new Generator();
 
