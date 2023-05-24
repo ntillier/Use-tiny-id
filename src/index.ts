@@ -43,6 +43,8 @@ class UniqueIdGenerator {
         this.status.push(0);
       }
     }
+
+    return this;
   }
 
   count () : number {

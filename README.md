@@ -2,6 +2,8 @@
 
 [View on npmjs](https://www.npmjs.com/package/use-tiny-id) - [View on github](https://github.com/ntillier/Use-tiny-id)
 
+`use-tiny-id` is an npm package designed to quickly create incremental IDs, so that all IDs are unique. You can run `test.js` to get an idea of the performance, which is similar to [nanoid](https://github.com/ai/nanoid) for generating a 21 character id.
+
 **Install**
 ```
 npm install use-tiny-id
@@ -19,7 +21,21 @@ console.log(myGenerator.next());// a
 ## Constructor
 `new Generator(characters, options)`
 ```js
+// creates a simple id generator
+const myGenerator = new Generator();
+
+// creates a generator with a custom alphabet
+const myGenerator = new Generator('abcd');
+
+// creates a generator with a custom alphabet and a config
 const myGenerator = new Generator('abcd', {
+  numberOfCharacters: 10,
+  lastGeneratedId: 'aaaaaaaaac'
+});
+
+// creates a generator with a simple config
+const myGenerator = new Generator();
+myGenerator.config({
   numberOfCharacters: 10,
   lastGeneratedId: 'aaaaaaaaac'
 });
@@ -78,4 +94,20 @@ const id: string = myGenerator.next();
 Returns the current id without incrementing it
 ```ts
 const id: string = myGenerator.current();
+```
+
+### Properties
+
+### chars
+The characters used to generate the ids.
+```js
+// 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789' by default
+console.log(myGenerator.chars);
+```
+
+### status
+An array of numbers, which is the current state of the id generator.
+```js
+// [0, ...]
+console.log(myGenerator.status);
 ```
